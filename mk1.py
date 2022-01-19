@@ -6,7 +6,5 @@ st.write('Heeeeellooooooooooooo')
 title = st.text_input('Enter in Hindi')
 st.write('The current movie title is', title)
 
-option = st.selectbox(
-     'How would you like to be contacted?',
-     ('Email', 'Home phone', 'Mobile phone'))
-
+Host_Country = st.selectbox('Select HomeTeamName name:',('France', 'Spain', 'Italy', 'England', 'Belgium', 'Portugal','Sweden'))
+st.write('You selected:', Host_Country)
