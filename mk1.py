@@ -3,7 +3,8 @@ import indicnlp
 from indicnlp.transliterate.unicode_transliterate import UnicodeIndicTransliterator
 
 st.write('Heeeeellooooooooooooo')
-title = st.text_input('Movie title', 'Life of Brian')
+title = st.text_input('Enter in Hindi')
 st.write('The current movie title is', title)
 
+option = st.selectbox('Email', 'Home phone', 'Mobile phone')
 
