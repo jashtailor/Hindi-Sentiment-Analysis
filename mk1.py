@@ -3,8 +3,9 @@ import indicnlp
 from indicnlp.transliterate.unicode_transliterate import UnicodeIndicTransliterator
 
 st.write('Heeeeellooooooooooooo')
-title = st.text_input('Enter in Hindi')
-st.write('The current movie title is', title)
+input_text = st.text_input('Enter in Hindi')
+st.write('Enter the sentence in Hindi', input_text)
 
-Host_Country = st.selectbox('Select HomeTeamName name:',('France', 'Spain', 'Italy', 'England', 'Belgium', 'Portugal','Sweden'))
-st.write('You selected:', Host_Country)
+lang = st.selectbox('Select Language:',('Gujarati', 'Punjabi', 'Kannada', 'Malayalam', 'Odia', 'Bengali'))
+#st.write(UnicodeIndicTransliterator.transliterate(input_text,"hi",lang))
+st.write('You selected:', lang)
