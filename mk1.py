@@ -7,5 +7,16 @@ input_text = st.text_input('Enter in a sentence in Hindi')
 
 lang = st.selectbox('Select Language:',('None','Gujarati', 'Punjabi', 'Kannada', 'Malayalam', 'Odia', 'Bengali'))
 
-st.write(UnicodeIndicTransliterator.transliterate(input_text,"hi",lang))
+if lang=='Gujarati':
+  st.write(UnicodeIndicTransliterator.transliterate(input_text,"hi",'gu'))
+elif lang=='Punjabi':
+  st.write(UnicodeIndicTransliterator.transliterate(input_text,"hi",'pa'))
+elif lang=='Kannada':
+  st.write(UnicodeIndicTransliterator.transliterate(input_text,"hi",'kn'))
+elif lang=='Malayalam':
+  st.write(UnicodeIndicTransliterator.transliterate(input_text,"hi",'ml'))
+if lang=='Odia':
+  st.write(UnicodeIndicTransliterator.transliterate(input_text,"hi",'or'))
+if lang=='Bengali':
+  st.write(UnicodeIndicTransliterator.transliterate(input_text,"hi",'bn'))
 
