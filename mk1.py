@@ -2,7 +2,7 @@ import streamlit as st
 import indicnlp 
 from indicnlp.transliterate.unicode_transliterate import UnicodeIndicTransliterator
 
-st.write('Heeeeellooooooooooooo')
+st.write('NLP Mini Project')
 lang = st.selectbox('Select Language:',('None','Gujarati', 'Punjabi', 'Kannada', 'Malayalam', 'Odia', 'Bengali'))
 input_text = st.text_input('Enter in a sentence in Hindi')
 
