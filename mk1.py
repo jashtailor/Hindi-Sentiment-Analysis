@@ -3,7 +3,9 @@ import indicnlp
 from indicnlp.transliterate.unicode_transliterate import UnicodeIndicTransliterator
 from indicnlp.tokenize import indic_tokenize  
 
-st.write('Parampara Pratishtha, Anushasan')
+st.write('''
+Parampara Pratishtha, Anushasan
+''')
 lang = st.selectbox('Select Language:',('None','Gujarati', 'Punjabi', 'Kannada', 'Malayalam', 'Odia', 'Bengali'))
 input_text = st.text_input('Enter in a sentence in Hindi')
 
