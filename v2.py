@@ -58,6 +58,9 @@ def predict(text):
     st.write('Negative')
  
 if st.button(label="Submit"):
-  predict(input)
+  try:
+    predict(input)
+  except:
+    pass
 else:
   pass
