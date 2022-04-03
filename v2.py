@@ -57,5 +57,4 @@ def predict(text):
   elif a==0:
     st.write('Negative')
  
-if submit_button:
-  predict(input)
+
