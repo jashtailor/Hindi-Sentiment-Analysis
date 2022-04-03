@@ -52,9 +52,9 @@ def predict(text):
   lst1 = np.asarray(lst, dtype=np.float64)
   new_lst1 = lst1.reshape(1, -1)
   a = RFC.predict(new_lst1)
-  if a=1:
+  if a==1:
     st.write('Positive')
-  elif a=0:
+  elif a==0:
     st.write('Negative')
  
 
