@@ -20,7 +20,7 @@ Parampara, Pratishtha, Anushasan
 
 input = st.text_input('Enter your sentence in the Hindi Language')
 
-st.form_submit_button(label="Submit")
+st.button(label="Submit")
 
 # --------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
