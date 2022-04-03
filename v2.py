@@ -18,9 +18,9 @@ st.header('''
 Parampara, Pratishtha, Anushasan
 ''')
 
-# --------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
 input = st.text_input('Enter your sentence in the Hindi Language')
+
+st.form_submit_button(label="Submit")
 
 # --------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -57,5 +57,5 @@ def predict(text):
   elif a==0:
     st.write('Negative')
  
-
-st.form_submit_button(label="Submit", help=None, on_click=predict(input), args=None, kwargs=None)
+if submit_button:
+  predict(input)
