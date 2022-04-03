@@ -33,7 +33,7 @@ with ZipFile(file_name, 'r') as zip1:
 with open('hindi_words2.json', 'r') as fp:
   data = json.load(fp)
   
-def preprocess(text):
+def predict(text):
   # 1 -> positive
   # 0 -> negative
   # print(text)
@@ -52,4 +52,10 @@ def preprocess(text):
   lst1 = np.asarray(lst, dtype=np.float64)
   new_lst1 = lst1.reshape(1, -1)
   a = RFC.predict(new_lst1)
-  return (a)
+  if a=1:
+    st.write('Positive')
+  elif a=0:
+    st.write('Negative')
+ 
+
+st.form_submit_button(label="Submit", help=None, on_click=predict(input), args=None, kwargs=None)
