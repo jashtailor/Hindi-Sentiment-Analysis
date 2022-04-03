@@ -20,7 +20,7 @@ Parampara, Pratishtha, Anushasan
 
 input = st.text_input('Enter your sentence in the Hindi Language')
 
-st.button(label="Submit")
+
 
 # --------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -57,4 +57,7 @@ def predict(text):
   elif a==0:
     st.write('Negative')
  
-
+if st.button(label="Submit"):
+  predict(input)
+else:
+  pass
