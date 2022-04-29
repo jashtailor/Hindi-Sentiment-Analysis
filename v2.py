@@ -63,6 +63,6 @@ if st.button(label="Submit"):
   try:
     predict(input)
   except:
-    pass
+    st.write('Error')
 else:
   pass
