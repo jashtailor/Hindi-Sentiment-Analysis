@@ -24,15 +24,15 @@ input = st.text_input('Enter your sentence in the Hindi Language')
 
 # --------------------------------------------------------------------------------------------------------------------------------------------------------------------
 # loading the hindi dictionary
-file_name = "hindi_words2.zip"
+file_name = "hindi_words_v3.zip"
 with ZipFile(file_name, 'r') as zip1:
   zip1.extractall()
 
-with open('hindi_words2.json', 'r') as fp:
+with open('hindi_words_v3.json', 'r') as fp:
   data = json.load(fp)
 
 # loading the model using pickle
-RFC = pickle.load(open('model.pkl', 'rb'))
+RFC = pickle.load(open('model1.pkl', 'rb'))
 
 # predict function
 def predict(text):
